@@ -26,7 +26,7 @@
                 </div>
                 <div class="navbar-end mr-32 gap-2">
                   <img src="assets/coin.png" alt="">
-                  <h4 class="text-2xl text-gray-600 font-semibold">5500</h4>
+                  <h4 id="donate-account-balance" class="text-2xl text-gray-600 font-semibold">5500</h4>
                   <p class="text-2xl text-gray-600 font-semibold">BDT</p>
                 </div>
               </div>
@@ -34,8 +34,8 @@
          <br>
          <!-- Header Banner Section -->
           <section class="mt-24 ml-[800px]">
-            <button class="btn btn-lg text-xl font-semibold">Donation</button>
-            <button class="btn btn-lg text-xl font-semibold">History</button>
+            <button id="donation-btn" class="btn btn-lg text-xl font-semibold">Donation</button>
+            <button id="history-btn" class="btn btn-lg text-xl font-semibold">History</button>
           </section>
     </header>
     <!-- Main Section -->
@@ -51,18 +51,18 @@
                   <div>
                     <button class="btn text-gray-500">
                         <span><img src="assets/coin.png" alt=""></span>
-                        <span>0</span>BDT
+                        <span id="donate-money-for-noakhali-flood">0</span>BDT
                     </button>
                     <h1 class="text-4xl font-bold capitalize text-black">Donate for Flood at Noakhali, Bangladesh</h1>
                     <p class="py-6 text-gray-500">
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs ml-52 mb-1" />
-                    <button class="btn btn-block bg-lime-300 text-black text-2xl">Donate Now</button>
+                    <input id="donate-input-field" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs ml-52 mb-1" />
+                    <button id="donate-now-btn" class="btn btn-block bg-lime-300 text-black text-2xl">Donate Now</button>
                   </div>
                 </div>
               </div>
-            <!-- 2st card -->
+            <!-- 2nd card -->
             <div class=" w-[1250px] bg-base-100 shadow-xl mt-12 ml-80 border rounded-lg">
                 <div class="hero-content flex-col lg:flex-row">
                   <img
@@ -82,7 +82,7 @@
                   </div>
                 </div>
               </div>
-            <!-- 3st card -->
+            <!-- 3rd card -->
             <div class=" w-[1250px] bg-base-100 shadow-xl mt-12 ml-80 border rounded-lg">
                 <div class="hero-content flex-col lg:flex-row">
                   <img
@@ -110,6 +110,7 @@
     </footer>
     <!-- JavaScript file link -->
     <script src="js/index.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 
 </html>
