@@ -9,3 +9,10 @@ function getTextValue(id){
     const textValueNumber = parseFloat(textValue);
     return textValueNumber;
 }
+
+function showSection(id){
+    document.getElementById('donation-cards').classList.add('hidden');
+    document.getElementById('transaction-history').classList.add('hidden');
+    
+    document.getElementById(id).classList.remove('hidden');
+}

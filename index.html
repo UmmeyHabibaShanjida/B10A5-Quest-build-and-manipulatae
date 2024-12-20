@@ -34,13 +34,13 @@
          <br>
          <!-- Header Banner Section -->
           <section class="mt-24 ml-[800px]">
-            <button id="donation-btn" class="btn btn-lg text-xl font-semibold">Donation</button>
-            <button id="history-btn" class="btn btn-lg text-xl font-semibold">History</button>
+            <button id="donation-btn" class="btn btn-outline btn-lg text-xl font-semibold">Donation</button>
+            <button id="history-btn" class="btn btn-outline btn-lg text-xl font-semibold">History</button>
           </section>
     </header>
     <!-- Main Section -->
     <main>
-        <section>
+        <section id="donation-cards">
             <div class="divider mt-10"></div>
             <!-- 1st card -->
             <div class=" w-[1250px] bg-base-100 shadow-xl mt-12 ml-80 border rounded-lg">
@@ -91,17 +91,23 @@
                   <div>
                     <button class="btn text-gray-500">
                         <span><img src="assets/coin.png" alt=""></span>
-                        <span>2400</span>BDT
+                        <span id="donate-money-aid-for-injured">2400</span>BDT
                     </button>
                     <h1 class="text-4xl font-bold capitalize text-black">Aid for Injured in the Quota Movement</h1>
                     <p class="py-6 text-gray-500">
                         The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                     </p>
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs ml-52 mb-1" />
-                    <button class="btn btn-block bg-lime-300 text-black text-2xl">Donate Now</button>
+                    <input id="donate-input-field3" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs ml-52 mb-1" />
+                    <button id="donate-now-btn3" class="btn btn-block bg-lime-300 text-black text-2xl">Donate Now</button>
                   </div>
                 </div>
               </div>
+              <!-- Transaction history -->
+               <div>
+                <div id="transaction-history" class="hidden">
+                  <h2 class="text-2xl text-center">History</h2>
+                 </div>
+               </div>
         </section>
     </main>
     <!-- Footer Section -->
@@ -111,6 +117,7 @@
     <!-- JavaScript file link -->
     <script src="js/index.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
 </body>
 
 </html>
