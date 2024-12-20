@@ -54,6 +54,13 @@ document.getElementById('donate-now-btn-2')
             return;
         }
 
+        const transactionEntry2 = document.createElement('p');
+        transactionEntry2.innerText = `
+        ${donateMoneyCard2} Taka is Donated for Flood Relief in Feni, Bangladesh`;
+        
+        document.getElementById('transaction-history').appendChild(transactionEntry2);
+
+
     });
 
 
@@ -80,4 +87,11 @@ document.getElementById('donate-now-btn3')
             alert('You do not enough money to donate');
             return;
         }
+
+        const transactionEntry3 = document.createElement('p');
+        transactionEntry3.innerText = `
+        ${donateMoneyCard3} Taka is Donated to Aid for Injured People, Bangladesh`;
+        
+        document.getElementById('transaction-history').appendChild(transactionEntry3);
+
     })
